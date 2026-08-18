@@ -13,7 +13,7 @@ import { test, expect } from '../../fixtures/pageFixtures';
 import { RandomDataUtil } from '../../utils/dataGenerator';
 import { executeQuery } from '../../utils/dbClient';
 
-const ADMIN_URL = process.env.ADMIN_URL || 'https://awesomeqa.com/ui/admin/index.php';
+const ADMIN_URL = process.env.ADMIN_URL || 'http://localhost/opencart/upload/admin/index.php';
 const ADMIN_USERNAME = process.env.ADMIN_USERNAME || '';
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || '';
 
@@ -30,7 +30,7 @@ test.describe('OpenCart Customer Registration - UI + Admin + DB Validation @mast
         const password = RandomDataUtil.getPassword();
 
         await test.step('1) Register a new customer through the frontend', async () => {
-            await homePage.navigateTo(process.env.WEB_APP_URL || 'https://awesomeqa.com/ui/');
+            await homePage.navigateTo(process.env.WEB_APP_URL || 'http://localhost/opencart/upload/');
             await homePage.clickMyAccount();
             await homePage.clickRegister();
 

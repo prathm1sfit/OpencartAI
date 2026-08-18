@@ -25,7 +25,7 @@ test('User Registration Flow @master @sanity @regression @web', async ({ homePag
     const password = RandomDataUtil.getPassword();
 
     await test.step('1) Open the application', async () => {
-        await homePage.navigateTo(process.env.WEB_APP_URL || 'https://awesomeqa.com/ui/');
+        await homePage.navigateTo(process.env.WEB_APP_URL || 'http://localhost/opencart/upload/');
     });
 
     await test.step('2) Navigate to My Account → Register', async () => {

@@ -29,7 +29,7 @@ loginData.forEach((data, index) => {
     test(`Login Data Driven - ${data.testName} [row ${index + 1}] @datadriven @master @web`, async ({ homePage, loginPage, myAccountPage }) => {
 
         await test.step('1) Open the application and navigate to login', async () => {
-            await homePage.navigateTo(process.env.WEB_APP_URL || 'https://awesomeqa.com/ui/');
+            await homePage.navigateTo(process.env.WEB_APP_URL || 'http://localhost/opencart/upload/');
             await homePage.clickMyAccount();
             await homePage.clickLogin();
         });

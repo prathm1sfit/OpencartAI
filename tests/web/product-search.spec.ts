@@ -20,7 +20,7 @@ test('Product Search Flow @master @regression @web', async ({ homePage, searchRe
     const { productName } = Helper.getProductDetails();
 
     await test.step('1) Open the application', async () => {
-        await homePage.navigateTo(process.env.WEB_APP_URL || 'https://awesomeqa.com/ui/');
+        await homePage.navigateTo(process.env.WEB_APP_URL || 'http://localhost/opencart/upload/');
     });
 
     await test.step('2) Search for a valid known product', async () => {
