@@ -8,6 +8,7 @@ node_modules/
 /playwright/.auth/
 
 # Environment / secrets
+
 env
 
 # IDE / tooling
@@ -16,5 +17,7 @@ env
 
 # Reports / artifacts
 /reports/
-
+/custom-report/
+/allure-report/
+/allure-results/
 playwright-mcp-context.md

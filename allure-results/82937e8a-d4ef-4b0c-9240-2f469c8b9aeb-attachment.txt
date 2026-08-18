@@ -1,0 +1,5 @@
+Dismissed the admin security modal
+Error checking customer row: TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('#form-customer table').locator('tbody tr').filter({ hasText: 'Eusebio.Lindgren25@hotmail.com' }).first() to be visible
+
