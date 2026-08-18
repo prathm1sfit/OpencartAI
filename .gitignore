@@ -16,7 +16,5 @@ env
 
 # Reports / artifacts
 /reports/
-/custom-report/
-/allure-report/
-/allure-results/
+
 playwright-mcp-context.md

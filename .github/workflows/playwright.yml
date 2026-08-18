@@ -10,7 +10,7 @@ on:
         description: "Select test suite"
         type: choice
         options:
-          - test:main
+          - test:master
           - test:sanity
           - test:regression
           - test:e2e
