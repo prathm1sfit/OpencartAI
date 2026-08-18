@@ -15,9 +15,10 @@ import { AdminLoginPage } from '../pages/AdminLoginPage';
 import { AdminCustomersPage } from '../pages/AdminCustomersPage';
 import { AdminCustomerEditPage } from '../pages/AdminCustomerEditPage';
 
-dotenv.config({ path: path.resolve(__dirname, '../env'), override: true });
+// Local env file wins over CI-generated .env; both are ignored for vars already set (e.g. GitHub secrets)
+dotenv.config({ path: [path.resolve(__dirname, '../env'), path.resolve(__dirname, '../.env')] });
 
-const APP_URL = process.env.WEB_APP_URL || 'http://localhost/opencart/upload/';
+const APP_URL = process.env.WEB_APP_URL || 'https://awesomeqa.com/ui/';
 
 type PageFixtures = {
     homePage: HomePage;

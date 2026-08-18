@@ -20,7 +20,7 @@ test('Valid Login Flow @master @sanity @regression @web', async ({ homePage, log
     const { email, password } = Helper.getLoginDetails();
 
     await test.step('1) Open the application', async () => {
-        await homePage.navigateTo(process.env.WEB_APP_URL || 'http://localhost/opencart/upload/');
+        await homePage.navigateTo(process.env.WEB_APP_URL || 'https://awesomeqa.com/ui/');
     });
 
     await test.step('2) Navigate to My Account → Login', async () => {

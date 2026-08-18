@@ -23,7 +23,7 @@ test('Add Product to Cart @master @regression @web', async ({ homePage, searchRe
     const { productName, productQuantity } = Helper.getProductDetails();
 
     await test.step('1) Open the application', async () => {
-        await homePage.navigateTo(process.env.WEB_APP_URL || 'http://localhost/opencart/upload/');
+        await homePage.navigateTo(process.env.WEB_APP_URL || 'https://awesomeqa.com/ui/');
     });
 
     await test.step('2) Search for a valid known product', async () => {
@@ -59,7 +59,7 @@ test('Add Product to Cart @master @regression @web', async ({ homePage, searchRe
     });
 
     await test.step('8) Open the shopping cart', async () => {
-        await homePage.navigateTo((process.env.WEB_APP_URL || 'http://localhost/opencart/upload/') + 'index.php?route=checkout/cart');
+        await homePage.navigateTo((process.env.WEB_APP_URL || 'https://awesomeqa.com/ui/') + 'index.php?route=checkout/cart');
     });
 
     await test.step('9) Verify the selected product is present in cart', async () => {

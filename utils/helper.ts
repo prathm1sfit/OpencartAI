@@ -14,8 +14,8 @@ export class Helper {
 
     static getLoginDetails() {
         return {
-            email: "prathamesh.moreqa@gmail.com",
-            password: "Password1"
+            email: process.env.APP_EMAIL || "prathamesh.moreqa@gmail.com",
+            password: process.env.APP_PASSWORD || "Password1"
         };
     }
 }

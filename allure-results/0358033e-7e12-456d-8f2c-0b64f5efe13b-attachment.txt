@@ -1,0 +1,5 @@
+Error checking My Account page: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#content h2').filter({ hasText: 'My Account' }) to be visible
+
+✅ Invalid Login completed successfully!
